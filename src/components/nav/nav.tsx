@@ -20,7 +20,7 @@ export const Nav: React.FC<Inav> = ({ selected }) => {
 
 	return (
 		<div className='w-1/5 font-oxanium'>
-			<div className=' p-[40px]'>
+			<div className=' p-[2.5rem]'>
 				<div className='flex'>
 					<img src={Logo} alt="Logo" />
 					<p className='font-semibold text-lg text-textDisabledMenu'>
@@ -38,10 +38,10 @@ export const Nav: React.FC<Inav> = ({ selected }) => {
 							onMouseEnter={() => handleMouseEnter(item.id)}
 							onMouseLeave={() => handleMouseLeave(0)}
 							key={item.id}
-							className='flex relative w-min justify-start items-center gap-[27px] px-[40px] my-5 cursor-pointer	'
+							className='flex relative w-min justify-start items-center gap-[1.6rem] px-[2.5rem] my-5 cursor-pointer	'
 						>
 							{
-								selected === item.id || isHovered === item.id ? <div className='absolute w-[12px] h-[12px] rounded-full bg-[#53B9EA] left-[-6px]'></div> : ''
+								selected === item.id || isHovered === item.id ? <div className='absolute w-[.75rem] h-[.75rem] rounded-full bg-[#53B9EA] left-[-0.375rem]'></div> : ''
 							}
 							<div className='w-7 h-7 flex justify-center items-center'>
 								<img
