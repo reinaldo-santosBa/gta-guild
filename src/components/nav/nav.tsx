@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { arrayMenu } from './arrayMenu';
 import Logo from '../../assets/logo.svg';
+import { Link } from 'react-router-dom';
 interface Inav {
 	selected: number;
 }
@@ -33,7 +34,7 @@ export const Nav: React.FC<Inav> = ({ selected }) => {
 			<nav>
 				{
 					arrayMenu.map((item) => (
-						<div
+						<Link to={'/' + item.link}
 							onMouseEnter={() => handleMouseEnter(item.id)}
 							onMouseLeave={() => handleMouseLeave(0)}
 							key={item.id}
@@ -52,8 +53,8 @@ export const Nav: React.FC<Inav> = ({ selected }) => {
 									alt={'Item do menu ' + item.text}
 								/>
 							</div>
-							<a href="" className={`text-sm font-normal  ${selected === item.id || isHovered === item.id ? 'text-textSelectedMenu' : 'text-textDisabledMenu'}`}>{item.text}</a>
-						</div>
+							<p className={`text-sm font-normal  ${selected === item.id || isHovered === item.id ? 'text-textSelectedMenu' : 'text-textDisabledMenu'}`}>{item.text}</p>
+						</Link>
 					))
 				}
 			</nav>
