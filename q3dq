@@ -1,0 +1,113 @@
+[33mcommit 91b69648675a394ad35c3a405eec2c623590fb99[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Reinaldo Santos <kingnaldoreinaldo@gmail.com>
+Date:   Tue Dec 19 18:22:09 2023 -0300
+
+    chore: reconfigure
+
+[33mcommit ef85ef30867473992da8f3ae71fcbf024b3a3b4e[m
+Author: Reinaldo Santos <kingnaldoreinaldo@gmail.com>
+Date:   Tue Dec 19 18:19:47 2023 -0300
+
+    feat: added RouterProvider
+
+[33mcommit 1418da0cb338b7c78bcbf1254d155e2905c01a51[m
+Author: Reinaldo Santos <kingnaldoreinaldo@gmail.com>
+Date:   Tue Dec 19 18:18:20 2023 -0300
+
+    feat: created routes initial
+
+[33mcommit f4586cabfb7039634ed7f2a7f1823554ca2c4bc6[m
+Author: Reinaldo Santos <kingnaldoreinaldo@gmail.com>
+Date:   Tue Dec 19 18:17:40 2023 -0300
+
+    feat: added link to click for item menu
+
+[33mcommit 3f3a1775b89fbd1513f0262aa19584c7cd5ce0df[m
+Author: Reinaldo Santos <kingnaldoreinaldo@gmail.com>
+Date:   Tue Dec 19 18:17:17 2023 -0300
+
+    feat: created more props to arrayMenu
+
+[33mcommit a27b66cb76b93ee80523f80417ed4d883ce6fec6[m
+Author: Reinaldo Santos <kingnaldoreinaldo@gmail.com>
+Date:   Tue Dec 19 18:16:47 2023 -0300
+
+    feat: created page to first page to click for menu
+
+[33mcommit dc0889284593cc84efc64d8989ecd2c1180fa20b[m
+Author: Reinaldo Santos <kingnaldoreinaldo@gmail.com>
+Date:   Tue Dec 19 17:37:31 2023 -0300
+
+    chore: added lib localforage, match-sorter and react-router-dom
+
+[33mcommit b7e6b4fce9277d9bce62969c06eb95876f6888b8[m
+Author: Reinaldo Santos <kingnaldoreinaldo@gmail.com>
+Date:   Tue Dec 19 11:51:39 2023 -0300
+
+    feat: calling the component screen
+
+[33mcommit df2055df711f62014fa59b189f7e0e346a0abfca[m
+Author: Reinaldo Santos <kingnaldoreinaldo@gmail.com>
+Date:   Tue Dec 19 11:51:25 2023 -0300
+
+    feat: created component screen for element with bg and format standard
+
+[33mcommit b0d3a7c3d54b9009acc191853d1b0416cb3c2aa3[m[33m ([m[1;32mmvp[m[33m)[m
+Author: Reinaldo Santos <kingnaldoreinaldo@gmail.com>
+Date:   Tue Dec 19 11:17:28 2023 -0300
+
+    feat: calling the menu
+
+[33mcommit 5faeffa5785d60472ea07fc8f5bf27f3c2b5f064[m
+Author: Reinaldo Santos <kingnaldoreinaldo@gmail.com>
+Date:   Tue Dec 19 11:16:20 2023 -0300
+
+    feat: fineshed menu
+
+[33mcommit 21c389322eb381bb431d8147c78b7f3e336dfb6c[m
+Author: Reinaldo Santos <kingnaldoreinaldo@gmail.com>
+Date:   Tue Dec 19 11:08:54 2023 -0300
+
+    feat: array for itens menu with id,icon,iconselected,text
+
+[33mcommit 68332943f4a0cb5efa04b1255ff930e0c4e9001b[m
+Author: Reinaldo Santos <kingnaldoreinaldo@gmail.com>
+Date:   Tue Dec 19 11:07:26 2023 -0300
+
+    feat: add init assets bg and icons
+
+[33mcommit b36b92c1482409af5a2682f6b5e06af79014e299[m
+Author: Reinaldo Santos <kingnaldoreinaldo@gmail.com>
+Date:   Tue Dec 19 11:06:50 2023 -0300
+
+    feat: add font and title modify
+
+[33mcommit 3b3e78a85866f58f115900344b4ea5d12100f087[m
+Author: Reinaldo Santos <kingnaldoreinaldo@gmail.com>
+Date:   Tue Dec 19 11:06:33 2023 -0300
+
+    chore: init theme to tailwind
+
+[33mcommit b25b9a857393d30ed4d09b7ba268300cd0cc5de2[m
+Author: Reinaldo Santos <kingnaldoreinaldo@gmail.com>
+Date:   Mon Dec 18 17:50:57 2023 -0300
+
+    feat: configuration to tailwindcss
+
+[33mcommit 959bd5ece594b135bcbd990a00dc0cec920a7f04[m
+Author: Reinaldo Santos <kingnaldoreinaldo@gmail.com>
+Date:   Mon Dec 18 10:03:59 2023 -0300
+
+    chore: addded and configuration to eslint
+
+[33mcommit 3eee5ef9e1c766bc7711f58ff6e2561950388645[m
+Author: Reinaldo Santos <kingnaldoreinaldo@gmail.com>
+Date:   Fri Dec 15 17:46:50 2023 -0300
+
+    feat: chore added git-commit-msg-linter
+
+[33mcommit 8bab5e151f1f25942d4e6c58942c099ec9060196[m
+Author: Reinaldo Santos <kingnaldoreinaldo@gmail.com>
+Date:   Fri Dec 15 17:45:00 2023 -0300
+
+    feat: init project
