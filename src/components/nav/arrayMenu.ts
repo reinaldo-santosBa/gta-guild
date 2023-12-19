@@ -16,36 +16,42 @@ export const arrayMenu = [
 		id: 1,
 		icon: MainIcon,
 		iconSelected: MainSelectedIcon,
-		text: 'Principal'
+		text: 'Principal',
+		link: 'main'
 	},
 	{
 		id: 2,
 		icon: BankIcon,
 		iconSelected: BankSelectedIcon,
-		text: 'Banco'
+		text: 'Banco',
+		link: 'bank'
 	},
 	{
 		id: 3,
 		icon: GoalsIcon,
 		iconSelected: GoalsSelectedIcon,
-		text: 'Metas'
+		text: 'Metas',
+		link: 'goals'
 	},
 	{
 		id: 4,
 		icon: RankingIcon,
 		iconSelected: RankingSelectedIcon,
-		text: 'Ranking'
+		text: 'Ranking',
+		link: 'ranking'
 	},
 	{
 		id: 5,
 		icon: RoutesIcon,
 		iconSelected: RoutesSelectedIcon,
-		text: 'Rotas'
+		text: 'Rotas',
+		link: 'route'
 	},
 	{
 		id: 6,
 		icon: ComunicationIcon,
 		iconSelected: ComunicationSelectedIcon,
-		text: 'Comunicação '
+		text: 'Comunicação',
+		link: 'comunication'
 	},
 ];
