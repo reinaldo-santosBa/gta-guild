@@ -1,4 +1,5 @@
 import React from 'react';
+import { TextTiel18px } from '../title18px/title18px';
 
 interface Ibtn {
 	title: string;
@@ -18,7 +19,7 @@ export const ButtonPrimary: React.FC<Ibtn> = ({ title, bg, onClick }) => {
 
 	return (
 		<button className={`border flex justify-center items-center rounded-md  flex-1 h-[3rem] ${classColor}`} onClick={onClick}>
-			<p className='text-white font-semibold text-lg'>{title}</p>
+			<TextTiel18px title={title} />
 		</button>
 	);
 };
