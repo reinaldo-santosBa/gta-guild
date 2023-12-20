@@ -17,7 +17,7 @@ export const HomeAreaAlert: React.FC = () => {
 				<p className='text-white font-bold text-[1.5rem]'>Principal</p>
 				<p className='text-[.75rem] text-subTitle'>Encontre tudo o que precisa para gerenciar um membro nas opções abaixo.</p>
 			</div >
-			<div className="flex-[2] flex overflow-hidden h-[5rem]">
+			<div className="flex-[2] flex overflow-hidden">
 				<div
 					className={'flex transition-transform ease-out duration-1000'}
 					style={{ transform: `translateX(-${positionSlider * 100}%)` }}
