@@ -1,17 +1,42 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Face from '../../assets/Face.png';
+import { NotifyAlert } from '../notifyHome/notifyHome';
 
 export const HomeAreaAlert: React.FC = () => {
+	const [positionSlider, setPositionSlider] = useState(0);
+
+	const next = () =>
+		setPositionSlider((positionSlider) => (positionSlider === 3 - 1 ? 0 : positionSlider + 1));
+	useEffect(() => {
+		const slideInterval = setInterval(next, 10000);
+		return () => clearInterval(slideInterval);
+	}, []);
 	return (
 		<div className='flex flex-1 flex-row'>
 			<div className="flex-1">
 				<p className='text-white font-bold text-[1.5rem]'>Principal</p>
 				<p className='text-[.75rem] text-subTitle'>Encontre tudo o que precisa para gerenciar um membro nas opções abaixo.</p>
 			</div >
-			<div className="flex-[2]">
-				<div className='py-[.75rem] px-[.85rem] bg-bgContrast w-auto h-auto rounded-[.5rem] border-alert border-b-2 '>
-					<p className='text-white font-bold text-[1rem]'>ALERTA TOTAL!! Tomem o máximo de cuidado.</p>
-					<p className='text-subTitle text-[.75rem] font-normal'>Estamos entrando em zona de alerta total, bandidos estão circulando pela região do batalhão fuzis de alto calibre, tomem as devidas precauções e não ...</p>
+			<div className="flex-[2] flex overflow-hidden h-[5rem]">
+				<div
+					className={'flex transition-transform ease-out duration-1000'}
+					style={{ transform: `translateX(-${positionSlider * 100}%)` }}
+				>
+					<NotifyAlert
+						title={'ALERTA TOTAL!! Tomem o máximo de cuidado.'}
+						message={'Estamos entrando em zona de alerta total, bandidos estão circulando pela região do batalhão fuzis de alto calibre, tomem as devidas precauções e não ...'}
+						borderColor={'red'}
+					/>
+					<NotifyAlert
+						title={'ALERTA TOTAL!! Tomem o máximo de cuidado.'}
+						message={'Estamos entrando em zona de alerta total, bandidos estão circulando pela região do batalhão fuzis de alto calibre, tomem as devidas precauções e não ...'}
+						borderColor={'green'}
+					/>
+					<NotifyAlert
+						title={'ALERTA TOTAL!! Tomem o máximo de cuidado.'}
+						message={'Estamos entrando em zona de alerta total, bandidos estão circulando pela região do batalhão fuzis de alto calibre, tomem as devidas precauções e não ...'}
+						borderColor={'yellow'}
+					/>
 				</div>
 			</div>
 			<div className="flex flex-1 gap-[.625rem] justify-center items-center">
