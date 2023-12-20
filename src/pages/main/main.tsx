@@ -3,6 +3,7 @@ import { Screen } from '../../components/screen/screen';
 import { Nav } from '../../components/nav/nav';
 import { HomeAreaAlert } from '../../components/homeAreaAlert/homeAreaAlert';
 import { BtnAreaHome } from '../../components/btnAreaHome/btnAreaHome';
+import { NewsArea } from '../../components/newsArea/newsArea';
 
 export const Main: React.FC = () => {
 	return (
@@ -11,10 +12,8 @@ export const Main: React.FC = () => {
 			<div className='flex flex-col w-full p-[1.25rem]'>
 				<div className='flex flex-col gap-3 flex-[4] w-full'>
 					<HomeAreaAlert />
-					<div className='flex flex-[3] flex-row'>
-						<div>
-
-						</div>
+					<div className='flex flex-1 flex-row'>
+						<NewsArea />
 					</div>
 					<div className='flex flex-1 flex-row gap-[1rem]'>
 						<BtnAreaHome />
