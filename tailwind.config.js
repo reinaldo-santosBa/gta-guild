@@ -20,7 +20,8 @@ export default {
 				textGridBlue: '#2CCCFF',
 				alert: '#FFBD13',
 				subTitle: 'rgba(255, 255, 255, 0.29)',
-				secondaryText: '#C8C5C5'
+				secondaryText: '#C8C5C5',
+				blueColor: '#5A9CFF',
 			},
 			backgroundImage: {
 				bgContrast: 'linear-gradient(92deg, #11121f73 100%,#11121f73 100%)',
