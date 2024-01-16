@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Face from '../../assets/Face.png';
-import { NotifyAlert } from '../notifyHome/notifyHome';
+import { NotifyAlert } from '@components';
 
 export const HomeAreaAlert: React.FC = () => {
 	const [positionSlider, setPositionSlider] = useState(0);
