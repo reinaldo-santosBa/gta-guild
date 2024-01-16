@@ -1,13 +1,9 @@
 import React from 'react';
+import { Bank, Goals, Main, Ranking } from '@pages';
 import {
+	Route,
 	createBrowserRouter
 } from 'react-router-dom';
-import { Main } from '../pages/main/main';
-import { Bank } from '../pages/bank/bank';
-import { Goals } from '../pages/goals/goals';
-import { Ranking } from '../pages/ranking/ranking';
-import { Route } from '../pages/route/route';
-import { Comunication } from '../pages/comunication/comunication';
 export const router = createBrowserRouter([
 	{
 		path: '/',
@@ -35,6 +31,5 @@ export const router = createBrowserRouter([
 	},
 	{
 		path: '/comunication',
-		element: <Comunication />,
 	},
 ]);

@@ -1,6 +1,5 @@
 import React from 'react';
-import { Screen } from '../../components/screen/screen';
-import { Nav } from '../../components/nav/nav';
+import { Nav, Screen } from '@components';
 
 export const Bank: React.FC = () => {
 	return (
