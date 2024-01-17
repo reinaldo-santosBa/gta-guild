@@ -1,10 +1,6 @@
+import { INews } from '@domain';
 import React from 'react';
-interface INews {
-	img: string;
-	name: string;
-	office: string;
-	news: string
-}
+
 
 export const News: React.FC<INews> = ({ img, name, office, news }) => {
 	return (
