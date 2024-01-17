@@ -3,7 +3,8 @@ import { ButtonPrimary } from '../btnPrimary/btnPrimary';
 
 export const BtnAreaHome: React.FC = () => {
 	return (
-		<>
+		<div className='flex flex-1 flex-row gap-[1rem]'>
+
 			<ButtonPrimary
 				title='Contratar novo membro +'
 				bg='green'
@@ -33,6 +34,6 @@ export const BtnAreaHome: React.FC = () => {
 					/1000
 				</p>
 			</div>
-		</>
+		</div>
 	);
 };
