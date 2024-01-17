@@ -1,7 +1,6 @@
 import React from 'react';
-import { Bank, Goals, Main, Ranking } from '@pages';
+import { Bank, Comunication, Route, Goals, Main, Ranking } from '@pages';
 import {
-	Route,
 	createBrowserRouter
 } from 'react-router-dom';
 export const router = createBrowserRouter([
@@ -31,5 +30,6 @@ export const router = createBrowserRouter([
 	},
 	{
 		path: '/comunication',
+		element: <Comunication />
 	},
 ]);
