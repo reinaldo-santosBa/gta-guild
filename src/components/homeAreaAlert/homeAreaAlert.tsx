@@ -1,16 +1,27 @@
 import React, { useEffect, useState } from 'react';
 import Face from '../../assets/Face.png';
 import { NotifyAlert } from '@components';
+import { NotifyAlertTypes, notifyAlertService } from '@domain';
 
 export const HomeAreaAlert: React.FC = () => {
 	const [positionSlider, setPositionSlider] = useState(0);
-
+	const [notifyAlerts, setNotifyAlerts] = useState<NotifyAlertTypes[]>([]);
 	const next = () =>
 		setPositionSlider((positionSlider) => (positionSlider === 3 - 1 ? 0 : positionSlider + 1));
 	useEffect(() => {
 		const slideInterval = setInterval(next, 10000);
 		return () => clearInterval(slideInterval);
 	}, []);
+
+	useEffect(() => {
+		(
+			async () => {
+				const notifyAlert = await notifyAlertService.getNotifyAlert();
+				setNotifyAlerts(notifyAlert);
+			}
+		)();
+	}, []);
+
 	return (
 		<div className='flex flex-1 flex-row'>
 			<div className="flex-1">
@@ -22,21 +33,17 @@ export const HomeAreaAlert: React.FC = () => {
 					className={'flex transition-transform ease-out duration-1000'}
 					style={{ transform: `translateX(-${positionSlider * 100}%)` }}
 				>
-					<NotifyAlert
-						title={'ALERTA TOTAL!! Tomem o máximo de cuidado.'}
-						message={'Estamos entrando em zona de alerta total, bandidos estão circulando pela região do batalhão fuzis de alto calibre, tomem as devidas precauções e não ...'}
-						borderColor={'red'}
-					/>
-					<NotifyAlert
-						title={'ALERTA TOTAL!! Tomem o máximo de cuidado.'}
-						message={'Estamos entrando em zona de alerta total, bandidos estão circulando pela região do batalhão fuzis de alto calibre, tomem as devidas precauções e não ...'}
-						borderColor={'green'}
-					/>
-					<NotifyAlert
-						title={'ALERTA TOTAL!! Tomem o máximo de cuidado.'}
-						message={'Estamos entrando em zona de alerta total, bandidos estão circulando pela região do batalhão fuzis de alto calibre, tomem as devidas precauções e não ...'}
-						borderColor={'yellow'}
-					/>
+					{
+						notifyAlerts.map((notifyAlert, index) => (
+							<NotifyAlert
+								key={index}
+								title={notifyAlert.title}
+								message={notifyAlert.message}
+								borderColor={notifyAlert.borderColor}
+							/>
+						))
+					}
+
 				</div>
 			</div>
 			<div className="flex flex-1 gap-[.625rem] justify-center items-center">
