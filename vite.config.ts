@@ -11,6 +11,7 @@ export default defineConfig({
 			'@utils': '/src/utils',
 			'@routes': '/src/routes',
 			'@domain': '/src/domain',
+			'@assets': '/src/assets'
 		},
 	},
 	plugins: [react()],
