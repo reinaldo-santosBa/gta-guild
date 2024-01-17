@@ -11,4 +11,14 @@ export const penaltiesMock: IPenalties[] = [
 		violation: 'Violação da regra 33.5 ( Ofender um superior ) ',
 		author: 'Giozera Carioca Vice Diretor'
 	},
+	{
+		data: '13.02.2023',
+		violation: 'Violação da regra 33.5 ( Ofender um superior ) ',
+		author: 'Giozera Carioca Vice Diretor'
+	},
+	{
+		data: '15.02.2023',
+		violation: 'Violação da regra 33.5 ( Ofender um superior ) ',
+		author: 'Giozera Carioca Vice Diretor'
+	},
 ];
