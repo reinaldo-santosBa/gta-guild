@@ -1,14 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { AreaChildren } from './areaChildrens/areaChildrens';
 import { News } from './news/news';
-import { INews, newsService } from '@domain';
+import { INews, IPenalties, newsService, penaltiesService } from '@domain';
+import { Penailtities } from './penalties/penalties';
 export const NewsPenaltiesArea: React.FC = () => {
 	const [news, setNews] = useState<INews[]>([]);
+	const [penalties, setPenalties] = useState<IPenalties[]>([]);
 	useEffect(() => {
 		(
 			async () => {
 				const newsList = await newsService.getNews();
 				setNews(newsList);
+				const penaltiesList = await penaltiesService.getPenalties();
+				setPenalties(penaltiesList);
 			}
 		)();
 	});
@@ -30,9 +34,17 @@ export const NewsPenaltiesArea: React.FC = () => {
 						))
 					}
 				</AreaChildren >
-				<AreaChildren title='Suas Penalidades'>
-					<div></div>
-					<div></div>
+				<AreaChildren halfPosition title='Suas Penalidades'>
+					{
+						penalties.map((item, index) => (
+							<Penailtities
+								key={index}
+								data={item.data}
+								author={item.author}
+								violation={item.violation}
+							/>
+						))
+					}
 				</AreaChildren>
 			</div >
 		</div >
