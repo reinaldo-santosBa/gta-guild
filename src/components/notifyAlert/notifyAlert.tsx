@@ -1,12 +1,7 @@
+import { NotifyAlertTypes } from '@domain';
 import React from 'react';
 
-interface INotify {
-	title: string;
-	message: string;
-	borderColor: 'red' | 'yellow' | 'green';
-}
-
-export const NotifyAlert: React.FC<INotify> = ({ title, message, borderColor }) => {
+export const NotifyAlert: React.FC<NotifyAlertTypes> = ({ title, message, borderColor }) => {
 	let borderColors;
 	if (borderColor === 'red') {
 		borderColors = 'border-borderBtnPrimaryRed';
