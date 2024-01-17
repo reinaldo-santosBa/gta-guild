@@ -1,15 +1,18 @@
-import MainIcon from '../../assets/icons/main.svg';
-import BankIcon from '../../assets/icons/bank.svg';
-import GoalsIcon from '../../assets/icons/goals.svg';
-import RankingIcon from '../../assets/icons/ranking.svg';
-import RoutesIcon from '../../assets/icons/routes.svg';
-import ComunicationIcon from '../../assets/icons/comunication.svg';
-import MainSelectedIcon from '../../assets/icons/mainSelected.svg';
-import BankSelectedIcon from '../../assets/icons/bankSelected.svg';
-import GoalsSelectedIcon from '../../assets/icons/goalsSelected.svg';
-import RankingSelectedIcon from '../../assets/icons/rankingSelected.svg';
-import RoutesSelectedIcon from '../../assets/icons/routesSelected.svg';
-import ComunicationSelectedIcon from '../../assets/icons/comunicationSelected.svg';
+import {
+	MainIcon,
+	BankIcon,
+	GoalsIcon,
+	RankingIcon,
+	RankingSelectedIcon,
+	RoutesIcon,
+	ComunicationIcon,
+	MainSelectedIcon,
+	GoalsSelectedIcon,
+	BankSelectedIcon,
+	RoutesSelectedIcon,
+	ComunicationSelectedIcon
+} from '@assets';
+
 
 export const arrayMenu = [
 	{
