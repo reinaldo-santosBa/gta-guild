@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { TextTittle18px } from '../../title18px/title18px';
 interface IAreaChildren {
-	children: React.ReactNode[] | React.ReactNode;
+	children: React.ReactNode[];
 	title: string;
+	halfPosition?: boolean;
 }
 
-export const AreaChildren: React.FC<IAreaChildren> = ({ children, title }) => {
+export const AreaChildren: React.FC<IAreaChildren> = ({ children, title, halfPosition }) => {
 	const [positionSlider, setPositionSlider] = useState(0);
 
 	const next = () =>
-		setPositionSlider((positionSlider) => (positionSlider === 2 - 1 ? 0 : positionSlider + 1));
+		setPositionSlider((positionSlider) => (positionSlider === children.length - 1 ? 0 : positionSlider + 1));
 	useEffect(() => {
 		const slideInterval = setInterval(next, 10000);
 		return () => clearInterval(slideInterval);
@@ -19,8 +20,8 @@ export const AreaChildren: React.FC<IAreaChildren> = ({ children, title }) => {
 			<TextTittle18px title={title} />
 			<div className='flex overflow-hidden'>
 				<div
-					className=' flex gap-4 flex-1 transition-transform ease-out duration-1000'
-					style={{ transform: `translateX(-${positionSlider * 100}%)` }}
+					className=' flex flex-1 transition-transform ease-out duration-1000'
+					style={{ transform: `translateX(-${halfPosition ? positionSlider * 50 : positionSlider * 100}%)` }}
 				>
 					{children}
 				</div>
