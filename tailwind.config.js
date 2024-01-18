@@ -9,6 +9,7 @@ export default {
 				borderBtnPrimaryGreen: '#50FFA0',
 				borderBtnPrimaryBlue: '#3ADCFF',
 				borderBtnPrimaryRed: '#FF133E',
+				buttonListBlue: '#5E8BFF',
 				textRed: '#FF1B51',
 				textBlue: '#2CCCFF',
 				textGreen: '#2CFFC0',
@@ -22,6 +23,7 @@ export default {
 				subTitle: 'rgba(255, 255, 255, 0.29)',
 				secondaryText: '#C8C5C5',
 				blueColor: '#5A9CFF',
+				colorTable: '#3F3F5C'
 			},
 			backgroundImage: {
 				bgContrast: 'linear-gradient(92deg, #11121f73 100%,#11121f73 100%)',
