@@ -9,3 +9,4 @@ export * from './title18px/title18px';
 export * from './mainArea/mainArea';
 export * from './listMember/listMember';
 export * from './infoArea/infoArea';
+export * from './headerListMember/headerListMember';
