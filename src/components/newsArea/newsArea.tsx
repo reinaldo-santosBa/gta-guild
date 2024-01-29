@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { AreaChildren } from './areaChildrens/areaChildrens';
 import { News } from './news/news';
+import { v4 as uuidv4 } from 'uuid';
 import { INews, IPenalties, newsService, penaltiesService } from '@domain';
 import { Penailtities } from './penalties/penalties';
 export const NewsPenaltiesArea: React.FC = () => {
@@ -21,24 +22,28 @@ export const NewsPenaltiesArea: React.FC = () => {
 			<div className='flex flex-none gap-8 w-full h-min'>
 				<AreaChildren
 					title='Noticiais da organização'
+					length={news.length}
 				>
 					{
-						news.map((item, index) => (
+						news.map((item) => (
 							<News
-								key={index}
+								key={uuidv4()}
 								img={item.img}
 								name={item.name}
 								office={item.office}
 								news={item.news}
+								id={item.id}
 							/>
 						))
 					}
 				</AreaChildren >
-				<AreaChildren halfPosition title='Suas Penalidades'>
+
+				<AreaChildren halfPosition title='Suas Penalidades' length={penalties.length}>
 					{
-						penalties.map((item, index) => (
+						penalties.map((item) => (
 							<Penailtities
-								key={index}
+								id={item.id}
+								key={uuidv4()}
 								data={item.data}
 								author={item.author}
 								violation={item.violation}
