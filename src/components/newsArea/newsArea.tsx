@@ -10,8 +10,6 @@ export const NewsPenaltiesArea: React.FC = () => {
 	const [penalties, setPenalties] = useState<IPenalties[]>([]);
 	const [penaltiesLength, setPenaltiesLength] = useState(0);
 	const [newsLength, setNewsLength] = useState(0);
-
-
 	const [loading, setLoading] = useState(true);
 	useEffect(() => {
 		(
