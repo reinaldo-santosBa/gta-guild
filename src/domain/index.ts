@@ -6,3 +6,7 @@ export * from './penalties/penaltiesService';
 export * from './penalties/types';
 export * from './member/memberService';
 export * from './member/types';
+export * from './charge/chargeService';
+export * from './charge/types';
+export * from './motive/motiveService';
+export * from './motive/types';
