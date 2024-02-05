@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Face from '../../assets/Face.png';
-import { NotifyAlert } from '@components';
+import { NotifyAlert, Profile } from '@components';
 import { NotifyAlertTypes, notifyAlertService } from '@domain';
 
 export const HomeAreaAlert: React.FC = () => {
@@ -46,10 +45,7 @@ export const HomeAreaAlert: React.FC = () => {
 
 				</div>
 			</div>
-			<div className="flex flex-1 gap-[.625rem] justify-center items-center">
-				<img src={Face} alt="" className='w-[2rem] h-[2rem]' />
-				<p className='text-white text-[.8rem] font-medium font-helveticaNeue'>Pixelz Warrios</p>
-			</div>
+			<Profile />
 		</div>
 	);
 };
