@@ -1,11 +1,14 @@
 import React from 'react';
-import { Nav, Screen } from '@components';
+import { Area, Nav, Screen } from '@components';
 
 export const Comunication: React.FC = () => {
 	return (
 		<Screen>
 			<Nav selected={6} />
-			<div></div>
+			<Area
+				title='Comunicação'
+				text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
+			/>
 		</Screen>
 	);
 };

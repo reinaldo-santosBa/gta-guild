@@ -1,11 +1,14 @@
 import React from 'react';
-import { Nav, Screen } from '@components';
+import { Area, Nav, Screen } from '@components';
 
 export const Bank: React.FC = () => {
 	return (
 		<Screen>
 			<Nav selected={2} />
-			<div></div>
+			<Area
+				title='Banco'
+				text='Deposite no banco da sua organização e agregue com o crescimento e desenvolvimento da mesma.'
+			/>
 		</Screen>
 	);
 };
