@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { TextTittle18px } from '../../title18px/title18px';
 interface IAreaChildren {
-	children: React.ReactNode[];
+	children: React.ReactNode[] | React.ReactNode;
 	title: string;
 	halfPosition?: boolean;
 	length: number
@@ -11,7 +11,9 @@ export const AreaChildren: React.FC<IAreaChildren> = ({ children, title, halfPos
 	const [positionSlider, setPositionSlider] = useState(0);
 
 	const next = () => {
-		setPositionSlider((positionSlider) => (positionSlider >= (length - 1) ? 0 : positionSlider + 1));
+
+		console.log(length);
+		setPositionSlider((positionSlider) => (Number(positionSlider) === Number(length - 1) ? 0 : Number(positionSlider + 1)));
 	};
 	useEffect(() => {
 		const slideInterval = setInterval(next, 5000);
