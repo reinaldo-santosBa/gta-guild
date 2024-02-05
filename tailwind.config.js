@@ -23,7 +23,8 @@ export default {
 				subTitle: 'rgba(255, 255, 255, 0.29)',
 				secondaryText: '#C8C5C5',
 				blueColor: '#5A9CFF',
-				colorTable: '#3F3F5C'
+				colorTable: '#3F3F5C',
+				placeHolder: 'rgba(255, 255, 255, 0.19)'
 			},
 			backgroundImage: {
 				bgContrast: 'linear-gradient(92deg, #11121f73 100%,#11121f73 100%)',
@@ -38,7 +39,7 @@ export default {
 				alert: 'linear-gradient(92deg, #FFBD13 100%,#FFBD13 100%)',
 				btnDisabled: 'rgba(54, 57, 72, 0.19)',
 				bgSelectMenu: '#53B9EA',
-
+				inputBg: 'rgba(255, 255, 255, 0.01)'
 			},
 			fontFamily: {
 				oxanium: ['Oxanium', 'sans-serif'],
