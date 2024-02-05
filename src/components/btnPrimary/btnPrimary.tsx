@@ -5,9 +5,10 @@ interface Ibtn {
 	title: string;
 	bg: 'red' | 'blue' | 'green';
 	onClick: () => void;
+	height: string;
 }
 
-export const ButtonPrimary: React.FC<Ibtn> = ({ title, bg, onClick }) => {
+export const ButtonPrimary: React.FC<Ibtn> = ({ title, bg, onClick, height }) => {
 	let classColor;
 	if (bg === 'red') {
 		classColor = 'bg-gradientBtnPrimaryRed border-borderBtnPrimaryRed';
@@ -18,7 +19,7 @@ export const ButtonPrimary: React.FC<Ibtn> = ({ title, bg, onClick }) => {
 	}
 
 	return (
-		<button className={`border flex justify-center items-center rounded-md  flex-1 h-[3rem] ${classColor}`} onClick={onClick}>
+		<button className={`border flex justify-center items-center rounded-md  flex-1 h-[${height}] ${classColor}`} onClick={onClick}>
 			<TextTittle18px title={title} />
 		</button>
 	);
