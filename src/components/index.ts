@@ -11,3 +11,5 @@ export * from './listMember/listMember';
 export * from './infoArea/infoArea';
 export * from './headerListMember/headerListMember';
 export * from './modalInput/modalInput';
+export * from './area/area';
+export * from './profile/profile';

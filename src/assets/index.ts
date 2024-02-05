@@ -11,7 +11,7 @@ import GoalsSelectedIcon from './icons/goalsSelected.svg';
 import RankingSelectedIcon from './icons/rankingSelected.svg';
 import RoutesSelectedIcon from './icons/routesSelected.svg';
 import ComunicationSelectedIcon from './icons/comunicationSelected.svg';
-
+import Face from './Face.png';
 export {
 	Avatar,
 	MainIcon,
@@ -25,5 +25,6 @@ export {
 	GoalsSelectedIcon,
 	BankSelectedIcon,
 	RoutesSelectedIcon,
-	ComunicationSelectedIcon
+	ComunicationSelectedIcon,
+	Face
 };
