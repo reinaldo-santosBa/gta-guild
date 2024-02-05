@@ -11,8 +11,6 @@ export const AreaChildren: React.FC<IAreaChildren> = ({ children, title, halfPos
 	const [positionSlider, setPositionSlider] = useState(0);
 
 	const next = () => {
-		console.log(positionSlider);
-
 		setPositionSlider((positionSlider) => (positionSlider >= (length - 1) ? 0 : positionSlider + 1));
 	};
 	useEffect(() => {
