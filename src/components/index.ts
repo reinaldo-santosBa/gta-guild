@@ -10,3 +10,4 @@ export * from './mainArea/mainArea';
 export * from './listMember/listMember';
 export * from './infoArea/infoArea';
 export * from './headerListMember/headerListMember';
+export * from './modalInput/modalInput';
